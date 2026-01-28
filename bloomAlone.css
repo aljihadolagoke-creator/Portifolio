@@ -1,0 +1,125 @@
+/* Reset and General Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+/* Background Image */
+.full-page-bg {
+    /* Replace 'your-background-photo.jpg' with your actual image file name */
+    background: url('Background.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* --- UPDATED LOGO SECTION --- */
+.logo {
+    width: 170px; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+    /* These lines remove the white background */
+    mix-blend-mode: multiply;
+    filter: contrast(1.1);
+    
+    /* Ensures it sits correctly above the pink box */
+    position: relative;
+    z-index: 10;
+}
+
+.logo-container {
+    margin-bottom: 20px;
+}
+/* ---------------------------- */
+
+/* The Pink Login Box */
+.login-box {
+    background-color: rgba(231, 84, 128, 0.85); 
+    width: 100%;
+    padding: 40px 30px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.login-box h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.login-box hr {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    margin-bottom: 30px;
+}
+
+/* Form Styling */
+.input-group {
+    margin-bottom: 25px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Forgot Password Link */
+.forgot-link {
+    text-align: right;
+    margin-top: -15px;
+    margin-bottom: 30px;
+}
+
+.forgot-link a {
+    color: #333; 
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* Black Login Button */
+.login-btn {
+    width: 100%;
+    background-color: #000;
+    color: white;
+    padding: 15px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #333;
+}
